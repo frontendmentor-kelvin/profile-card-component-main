@@ -27,7 +27,7 @@ Thanks for checking out this front-end coding challenge.
 - Mobile-first workflow
 
 ### What I learned
-- flex-box with padding inner div
+- postion absolute inside relative parent
 
 ## Author
 
