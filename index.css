@@ -1,0 +1,153 @@
+.primary {
+  color: hsl(185, 75%, 39%);
+  color: hsl(229, 23%, 23%);
+  color: hsl(227, 10%, 46%);
+}
+
+.neutral {
+  color: hsl(0, 0%, 59%);
+}
+
+html, body {
+  font-size: 18px;
+  font-family: 'Kumbh Sans', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 375px) {
+  #card {
+    width: 85%;
+  }
+  #pattern-top img {
+    position: absolute;
+    width: 300%;
+    bottom: 0;
+    right: 0;
+  }
+  #pattern-bottom img {
+    position: absolute;
+    width: 300%;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media only screen and (min-width: 376px) {
+  #card {
+    width: 25%;
+  }
+  #pattern-top img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  #pattern-bottom img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+main, #container {
+  height: 100%;
+  position: relative;
+}
+
+#pattern-top {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  overflow: hidden;
+}
+
+#pattern-bottom {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  float: right;
+  overflow: hidden;
+}
+
+/* CARD */
+#card {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+#pattern-bg, #info {
+  height: 140px;
+  position: relative;
+}
+
+#pattern-bg {
+  background-image: url('./images/bg-pattern-card.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#info-avatar {
+  position: absolute;
+  top: -48px;
+  height: 106px;
+  width: 100%;
+  text-align: center;
+}
+
+img#avatar {
+  border-radius: 50%;
+  border: 5px solid white;
+  width: 96px;
+  height: 96px;
+  top: -48px;
+}
+
+#info-text {
+  text-align: center;
+  margin-top: 53px;
+  height: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#numbers {
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  border-top: thin solid hsl(0deg 0% 59% / 15%);
+  padding: 20px;
+}
+
+.number-item {
+  flex: 1;
+  text-align: center;
+}
+
+.number-item-key {
+  font-size: 0.55rem;
+  letter-spacing: 1.5px;
+  color: hsl(0, 0%, 59%);
+}
+
